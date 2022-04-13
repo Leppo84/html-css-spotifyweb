@@ -1,10 +1,10 @@
+/* GENERAL RULES */
+
 * {
     margin: 0;
     border: 0;
     box-sizing: border-box;
 }
-
-/* GENERAL RULES */
 
 body {
     font-family: 'Montserrat', sans-serif;
@@ -15,7 +15,7 @@ body {
 body span {
     font-size: 11px;
     color: gray;
-    line-height: 18px;
+    line-height: 30px;
 }
 
 body a {
@@ -25,6 +25,11 @@ body a {
 
 body ul {
     list-style: none;
+    padding-left: 0;
+}
+
+body img {
+    max-width: 100%;
 }
 
 .gray {
@@ -53,19 +58,20 @@ div.container {
 
 aside {
     width: 200px;
-    min-height: calc(100vh - 80px);
+    height: calc(100vh - 80px);
     background-color: black;
     padding: 20px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
+
 }
 
 main {
     width: calc(100% - 200px);
     max-height: calc(100vh - 80px);
-    /* padding-top: 100px; */
+    padding: 12px;
     overflow-y: auto;
     display: flex;
     flex-wrap: wrap;
@@ -108,6 +114,12 @@ div.player {
 
 }
 
+aside nav {
+    width: 100%;
+    margin-bottom: 20px;
+
+}
+
 .icon_nav {
     width: 24px;
     filter: brightness(0.7);
@@ -123,18 +135,9 @@ span.line_nav {
     font-weight: a00;
     font-size: 36px;
     margin-left: -21px;
-    /* margin-right: 4px; */
     position: relative;
     bottom: -8px;
     left: -1px;
-}
-
-aside nav {
-    margin-bottom: 20px;
-}
-
-aside nav ul{
-    padding-left: 0;
 }
 
 aside nav ul li{
@@ -146,17 +149,79 @@ span.plus {
     display: inline-block;
     width: 32px;
     height: 32px;
-    padding: 7px 9px;
+    padding: 0px 9px;
     font-size: 16px;
     margin: 10px 0;
     margin-right: 4px;
-} 
+}
+
+div.playlist {
+    width: 100%;
+    min-height: 0px;
+    flex: 1 1 auto;
+    overflow-y: auto;
+
+}
+
+div.user {
+    width: 100%;
+    align-self: flex-end;
+    min-height: auto;
+}
 
 /* MAIN */
 
 main > nav {
-    margin-top: 100px;
+    margin: 100px 0px 30px;
     width: 100%;
+}
+
+main nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+main nav ul li {
+    margin: 0 10px;
+    font-size: 14px;
+}
+
+#current {
+    position: relative;
+    padding-bottom: 4px;
+    /* border-bottom: 2px solid #adff2f ; */
+}
+
+#current:after {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 33%;
+    width: 34%;
+    border-bottom: 2px solid #adff2f ;
+}
+
+.row > h2 {
+    margin: 20px 0px;
+    width: 100%;
+}
+
+.row {
+    width: 100%;
+    /* margin: 20px 0px; */
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.album {
+    padding-right: 8px;
+    max-width: calc(100% / 6) ;
+    text-align: center;
+}
+
+.album > img {
+    max-width: 100%;
 }
 
 /* PLAYER */
