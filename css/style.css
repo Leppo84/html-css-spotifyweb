@@ -17,7 +17,11 @@ body span {
     color: gray;
 }
 
-aside span {
+aside span:hover {
+    color: white;
+}
+
+aside span, aside a {
     line-height: 30px;
 }
 
@@ -27,7 +31,7 @@ body a {
     color: grey;
 }
 
-body a:hover, body a:hover > span,  body a:hover span > img {
+body a:hover, body a:hover > span, body a:hover span > img {
     color: white;
     filter: brightness(1);
 }
@@ -40,6 +44,12 @@ body ul {
 body img {
     max-width: 100%;
 }
+
+body hr {
+    border-top: 1px solid gray;
+    margin-bottom: 10px;
+}
+
 
 .gray {
     color: gray;
@@ -65,40 +75,6 @@ div.container {
     display: flex;
 }
 
-/* TOP */
-
-div.topbar {
-    background-color: rgba(0, 0, 0, 0.6);
-    height: 90px;
-    width: calc(100% - 200px);
-    position: absolute;
-    top: 0;
-    right: 0;
-    z-index: 30;
-    text-align: right;
-    padding: 30px;
-}
-
-.btn {
-    font-size: 11px;
-    color: white;
-    padding: 12px 35px;
-    border: 1px solid white;
-    border-radius: 26px;
-    margin-bottom: 8px;
-    margin-right: 8px;
-}
-
-.btn:hover {
-    font-size: 12px;
-    color: white;
-    padding: 14px 38px;
-    border: 1px solid white;
-    border-radius: 26px;
-    margin-bottom: 2px;
-    margin-right: 0px;
-}
-
 /* SIDEBAR */
 
 aside {
@@ -115,13 +91,11 @@ aside {
 #logo_full {
     width: 120px;
     margin-bottom: 30px;
-
 }
 
 aside nav {
     width: 100%;
     margin-bottom: 20px;
-
 }
 
 .icon_nav {
@@ -174,13 +148,73 @@ div.playlist {
     overflow-y: auto;
 }
 
-
-
 div.user {
     width: 100%;
     align-self: flex-end;
     min-height: auto;
 }
+
+.arrow_d {
+    font-size: 6px;
+    border: 1px solid gray;
+    border-radius: 50%;
+    padding: 1px 0px 0px 2px;
+    margin-right: 6px;
+}
+
+div.user span:hover > span {
+    color: white;
+}
+
+div.user span:hover span.arrow_d {
+    border: 1px solid white;
+}
+
+.userico {
+    background-color: gray;
+    border-radius: 50%;
+    padding: 3px 0px 0px 3px;
+    margin-right: 6px;
+}
+
+.userico > img {
+    max-width: 12px;
+}
+
+/* TOP */
+
+div.topbar {
+    background-color: rgba(0, 0, 0, 0.6);
+    height: 90px;
+    width: calc(100% - 217px);
+    position: absolute;
+    top: 0;
+    right: 17px;
+    z-index: 30;
+    text-align: right;
+    padding: 30px;
+}
+
+.btn {
+    font-size: 11px;
+    color: white;
+    padding: 12px 35px;
+    border: 1px solid white;
+    border-radius: 26px;
+    margin-bottom: 8px;
+    margin-right: 8px;
+}
+
+.btn:hover {
+    font-size: 12px;
+    color: white;
+    padding: 14px 38px;
+    border: 1px solid white;
+    border-radius: 26px;
+    margin-bottom: 2px;
+    margin-right: 0px;
+}
+
 
 /* MAIN */
 
@@ -248,8 +282,40 @@ main nav ul li {
     text-align: center;
 }
 
-.album > img {
+.album img {
     margin-bottom: 5px;
+}
+
+.album img.artist {
+    border-radius: 50%;
+}
+
+.album_img {
+    position: relative;
+    text-align: center;
+}
+
+.play {
+    display: none;
+    position: absolute;
+    left: calc(40% - 6px);
+    font-size: 3.5vw;
+    margin-top: calc(6vw - 20px);
+    /* margin-left: calc(-60% + -4px); */
+
+}
+
+.album:hover span {
+    color: white;
+}
+
+
+.album:hover img {
+    filter: brightness(0.4);
+}
+
+.album:hover .play {
+    display: inline-block;
 }
 
 /* PLAYER */
