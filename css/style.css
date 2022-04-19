@@ -478,6 +478,9 @@ div.player {
         text-align: center;
     }
 
+    main .play {
+        font-size: 5vw;
+    }
 }
 
 @media screen and (max-width:600px) {
@@ -487,6 +490,11 @@ div.player {
         padding-right: 10px;
         width: calc(100% / 2) ;
         text-align: center;
+    }
+
+    
+    main .play {
+        font-size: 6.5vw;
     }
     
 }
