@@ -23,9 +23,16 @@
 <body>
     <div class="container">
         <aside>
-            <img id="logo_full" src="img/logo.svg" alt="Spotify logo">
+            <img id="logo_full" class="hide_min" src="img/logo.svg" alt="Spotify logo">
             <nav>
                 <ul>
+                    <li>
+                        <a href="#">
+                            <span>
+                                <img class="icon_nav logo_alt" src="img/logo-small.svg" alt="Home icon">
+                            </span>
+                        </a>
+                    </li>
                     <li>
                         <span class="line_nav">
                             |
@@ -34,7 +41,7 @@
                             <span>
                                 <img class="icon_nav highlighted" src="img/home.svg" alt="Home icon">
                             </span>
-                            <span class="white">
+                            <span class="white hide_min">
                                 Home
                             </span>
                         </a>
@@ -43,7 +50,7 @@
                         <a href="#">
                             <span>
                                 <img class="icon_nav gray" src="img/search.svg" alt="Home icon">
-                                Cerca
+                                <span class="hide_min">Cerca</span>
                             </span>
                         </a>
                     </li>
@@ -51,13 +58,13 @@
                         <a href="#">
                             <span>
                                 <img class="icon_nav gray" src="img/libreria.svg" alt="Home icon">
-                                La tua libreria
+                                <span class="hide_min">La tua libreria</span>                                
                             </span>
                         </a>
                     </li>
                 </ul>
             </nav>
-            <div class="playlist">
+            <div class="playlist hide_min">
                 <h6>
                     PLAYLIST
                 </h6>
@@ -98,14 +105,18 @@
                     <span class="arrow_d">
                         <i class="fas fa-arrow-down"></i>
                     </span>
-                    Installa app
+                    <span class="hide_min">
+                        Installa app
+                    </span>
                 </span>
                 <hr>
                 <h6>
                     <span class="userico">
                         <img src="img/profile.svg" alt="">
                     </span>
-                    Jockety Johnson
+                    <span class="hide_min white">
+                        Jockety Johnson
+                    </span>
                 </h6>
             </div>
         </aside>
@@ -138,17 +149,16 @@
                 </ul>
             </nav>
             <div class="row">
-                <h2>Recently played</h2>
+                <h3>Recently played</h3>
                 <div class="album">
                     <div class="album_img">
                         <img src="img/metal_lifting.jpg" alt="Album 01">
                         <i class="play far fa-play-circle"></i>
-
                     </div>
                     <h6>
                         Heavy Metal
                     </h6>
-                    <span>
+                    <span class="txt_ltl">
                         Mix
                     </span>
                 </div>
@@ -160,7 +170,7 @@
                     <h6>
                         Stranger Things, Vol. 1 (a Netflix Original Series Soundtrack)
                     </h6>
-                    <span>
+                    <span class="txt_ltl">
                         Kyle Dixon & Michael Stein
                     </span>
                 </div>
@@ -172,7 +182,7 @@
                     <h6>
                         A quet place
                     </h6>
-                    <span>
+                    <span class="txt_ltl">
                         Subtitle
                     </span>
                 </div>
@@ -184,7 +194,7 @@
                     <h6>
                         Split
                     </h6>
-                    <span>
+                    <span class="txt_ltl">
                         Subtitle
                     </span>
                 </div>
@@ -196,7 +206,7 @@
                     <h6>
                         A cure for wellness
                     </h6>
-                    <span>
+                    <span class="txt_ltl">
                         Subtitle
                     </span>
                 </div>
@@ -208,14 +218,14 @@
                     <h6>
                         Sinister
                     </h6>
-                    <span>
+                    <span class="txt_ltl">
                         Subtitle
                     </span>
                 </div>
             </div>
             <div class="row">
-                <h2>Creato per Jockety Johnson</h2>
-                <span>
+                <h3>Creato per Jockety Johnson</h3>
+                <span class="txt_ltl" >
                     Più ascolti, più accurati saranno i suggerimenti.
                 </span>
                 <div class="album">
@@ -238,8 +248,8 @@
                 </div>
             </div>
             <div class="row">
-                <h2>Artisti più popolari</h2>
-                <span>
+                <h3>Artisti più popolari</h3>
+                <span class="txt_ltl" >
                     Più ascolti, più accurati saranno i suggerimenti.
                 </span>
                 <div class="album">
@@ -264,6 +274,54 @@
         </main>
     </div>
     <div class="player">
+        <div class="left_pl">
+            <img class="hide_min" src="img/sinister.jpeg" alt="On air">
+            <div class="spacer">
+                <h6>
+                    Sinister
+                </h6>
+                <span class="txt_ltl">
+                    Brano corrente
+                </span>    
+            </div>
+            <span>
+                <i class="far fa-heart"></i>
+            </span>
+            <span>
+                <i class="far fa-folder"></i>
+            </span>
+        </div>
+        <div class="center_pl">
+            <div class="row">
+                <i class="fas fa-random"></i>
+                <i class="fas fa-step-backward"></i>
+                <i class="play far fa-play-circle"></i>
+                <i class="fas fa-step-forward"></i>
+                <i class="fas fa-redo"></i>
+            </div>
+            <div class="bar">
+                <span>
+                    0:25
+                </span>
+                <div class="bar_fill"></div>
+                <i class="cursor fas fa-circle"></i>
+                <div class="bar_total">
+                </div>
+                <span>
+                    4:35
+                </span>
+            </div>
+        </div>
+        <div class="right_pl">
+            <i class="fas fa-list"></i>
+            <i class="fas fa-desktop"></i>
+            <i class="fas fa-volume-up"></i>
+            <div class="bar">
+                <div class="bar_fill"></div>
+                <i class="cursor fas fa-circle"></i>
+                <div class="bar_total"></div>
+            </div>
+        </div>
     </div>
 </body>
 </html>
