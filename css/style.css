@@ -21,10 +21,6 @@ aside span:hover, .player span:hover {
     color: white;
 }
 
-aside span, aside a {
-    line-height: 30px;
-}
-
 body a {
     text-decoration: none;
     font-size: 11px;
@@ -81,10 +77,10 @@ div.container {
 /* SIDEBAR */
 
 aside {
-    width: 200px;
+    width: 220px;
     height: calc(100vh - 80px);
     background-color: black;
-    padding: 20px 20px 5px;
+    padding: 20px 22px 5px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -96,7 +92,7 @@ aside {
 
 #logo_full {
     width: 120px;
-    margin-bottom: 20px;
+    margin-bottom: 8px;
 }
 
 aside nav {
@@ -108,6 +104,7 @@ aside nav {
     width: 24px;
     filter: brightness(0.7);
     vertical-align: middle;
+    margin-right: 3px;
 }
 
 .logo_alt {
@@ -122,23 +119,19 @@ aside nav {
 
 span.line_nav {
     color: #adff2f;
-    font-weight: a00;
-    font-size: 36px;
+    font-weight: 400;
+    font-size: 38px;
     margin-left: -21px;
     position: relative;
     bottom: -8px;
     left: -1px;
 }
 
-aside nav ul li{
-    margin-bottom: 8px;
-}
-
 span.plus {
     background-color: gray;
     display: inline-block;
     width: 32px;
-    height: 32px;
+    height: 34px;
     padding: 0px 9px;
     font-size: 16px;
     margin: 10px 0;
@@ -159,6 +152,12 @@ div.playlist {
     flex: 1 1 auto;
     overflow-y: auto;
 }
+
+
+aside span, aside a {
+    line-height: 35px;
+}
+
 
 div.user {
     width: 100%;
@@ -197,14 +196,14 @@ div.user span:hover span.arrow_d {
 
 div.topbar {
     background-color: rgba(0, 0, 0, 0.6);
-    height: 90px;
-    width: calc(100% - 200px);
+    height: 80px;
+    width: calc(100% - 220px);
     position: absolute;
     top: 0;
     right: 0px;
     z-index: 30;
     text-align: right;
-    padding: 30px 30px 0px 0px;
+    padding: 25px 20px 0px 0px;
 }
 
 .btn {
@@ -231,7 +230,7 @@ div.topbar {
 /* MAIN */
 
 main {
-    width: calc(100% - 200px);
+    width: calc(100% - 220px);
     /* min-height: 100px; */
     max-height: calc(100vh - 80px);
     padding: 18px;
@@ -241,7 +240,7 @@ main {
 }
 
 main > nav {
-    margin: 90px 0px 10px;
+    margin: 80px 0px 10px;
     width: 100%;
 }
 
