@@ -96,7 +96,7 @@ aside {
 
 #logo_full {
     width: 120px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 aside nav {
@@ -310,16 +310,11 @@ main .row {
 main .play {
     display: none;
     position: absolute;
-    /* left: calc(40% - 6px); */
     left: 0;
     font-size: 3.5vw;
-    margin-top: calc(6vw - 20px);
+    margin-top: 50%;
+    transform: translate(0, -50%);
 }
-
-.album:hover span {
-    color: white;
-}
-
 
 .album:hover img {
     filter: brightness(0.4);
@@ -347,7 +342,7 @@ div.player {
 }
 
 .left_pl {
-    width: calc(100vw / 6);
+    width: calc(100vw / 7);
     min-width: 140px;
     display: flex;
     justify-content: space-between;
@@ -376,7 +371,7 @@ div.player {
 }
 
 .player .row {
-    width: calc(100vw / 5);
+    width: calc(100vw / 7);
     min-width: 100px;
     display: flex;
     justify-content: space-between;
@@ -492,9 +487,8 @@ div.player {
         text-align: center;
     }
 
-    
     main .play {
-        font-size: 6.5vw;
+        font-size: 8vw;
     }
     
 }
@@ -511,12 +505,10 @@ div.player {
 
     aside {
         width: 40px;
-        height: calc(100vh - 80px);
         padding: 10px;
+        justify-content: space-between;
         min-height: none;
         flex: none;
-        justify-content: space-between;
-        /* overflow-y: hidden; */
     }
 
     span.line_nav {
@@ -525,11 +517,17 @@ div.player {
 
     .arrow_d {
         padding: 0 1px 0 1px;
+        margin-left: 6px;
+        margin-right: 6px;
+        display: flex;
+        justify-content: center;
     }
     
     .userico {
-        padding: 3px 2px 0px 2px;
-        margin-right: 0;
+        padding: 1px 2px 2px 2px;
+        margin: 8px 3px 5px;
+        display: flex;
+        justify-content: center;
     }
 
     main {
@@ -538,11 +536,13 @@ div.player {
     
     div.topbar {
         width: calc(100% - 40px);
-        text-align: center;
         padding: 30px 15px 0px;
-
     }
     
+    main .play {
+        font-size: 10vw;
+    }
+
     .left_pl {
         min-width: 97px;
     }
