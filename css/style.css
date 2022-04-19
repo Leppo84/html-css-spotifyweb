@@ -310,7 +310,8 @@ main .row {
 main .play {
     display: none;
     position: absolute;
-    left: calc(40% - 6px);
+    /* left: calc(40% - 6px); */
+    left: 0;
     font-size: 3.5vw;
     margin-top: calc(6vw - 20px);
 }
@@ -326,6 +327,7 @@ main .play {
 
 .album:hover .play {
     display: inline-block;
+    width: 100%;
 }
 
 /* PLAYER */
